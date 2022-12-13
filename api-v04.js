@@ -1,5 +1,3 @@
-src="https://cdn.jsdelivr.net/gh/kaibertelsen/airtable/config-03.js"
-
 function airtable(baseID,tableIOd,type,indata,funckid,description){
 var url = "https://api.airtable.com/v0/"+baseID+"/"+tableIOd;
 
