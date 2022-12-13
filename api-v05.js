@@ -19,7 +19,7 @@ url = url+"?maxRecords=100&view="+indata;
 var xhr = new XMLHttpRequest();
 xhr.open(type, url);
 xhr.setRequestHeader("Accept", "application/json");
-xhr.setRequestHeader("Authorization", config.MY_KEY;);
+xhr.setRequestHeader("Authorization", config.MY_KEY);
 xhr.setRequestHeader("Content-Type", "application/json");
 
 xhr.onreadystatechange = function () {
