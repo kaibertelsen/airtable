@@ -1,3 +1,5 @@
+src="https://cdn.jsdelivr.net/gh/kaibertelsen/airtable/api-v01.js"
+
 function airtable(baseID,tableIOd,type,indata,funckid,description){
 var url = "https://api.airtable.com/v0/"+baseID+"/"+tableIOd;
 
@@ -19,7 +21,7 @@ url = url+"?maxRecords=100&view="+indata;
 var xhr = new XMLHttpRequest();
 xhr.open(type, url);
 xhr.setRequestHeader("Accept", "application/json");
-xhr.setRequestHeader("Authorization", "Bearer keyQS7dGr6jekYJyy");
+xhr.setRequestHeader("Authorization", config.MY_KEY;);
 xhr.setRequestHeader("Content-Type", "application/json");
 
 xhr.onreadystatechange = function () {
